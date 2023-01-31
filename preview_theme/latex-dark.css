@@ -78,7 +78,7 @@
     font-family: '楷体';
     font-style: italic;
     font-weight: normal;
-    src: url("./latex/simfang.ttf");
+    src: url("./latex/simkai.ttf");
 }
 
 @font-face {
@@ -242,6 +242,7 @@ em {
   margin-left: .20em;
   margin-right: .25em;
   font-style: italic;
+  font-weight: lighter;
   font-family: 'Latin Modern Roman 10',
     'LM Roman 10',
     'Times New Roman',
