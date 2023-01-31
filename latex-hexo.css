@@ -61,7 +61,7 @@
     src: url("./latex/SourceHanSerifSC-Bold.otf");
 }
 
-/* 宋体 */
+/* 中文正文字体 */
 @font-face {
     font-family: simsun;
     src: url("./latex/simsun.ttc");
@@ -69,6 +69,13 @@
 
 @font-face {
     font-family: '仿宋';
+    font-style: italic;
+    font-weight: normal;
+    src: url("./latex/simfang.ttf");
+}
+
+@font-face {
+    font-family: '楷体';
     font-style: italic;
     font-weight: normal;
     src: url("./latex/simfang.ttf");
@@ -235,11 +242,11 @@ em {
         'LM Roman 10',
         'Times New Roman',
         Arial,
+        '仿宋',
         '方正清刻本悦宋 简繁',
         '方正新书宋_GBK',
         'Source Han Serif SC',
         'simsun',
-        cursive,
         serif;
 }
 
@@ -271,7 +278,8 @@ blockquote {
 /* 引用文字 */
 blockquote p {
     padding: 1px 20px 1px 20px;
-    font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+    font-style: italic;
+    font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '楷体', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '方正清刻本悦宋 简繁', serif;
     font-size: 12pt;
 }
 
