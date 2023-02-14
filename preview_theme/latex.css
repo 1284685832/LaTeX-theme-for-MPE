@@ -275,7 +275,7 @@ p code,
 li code {
   color: #000000;
   background-color: #CCCCCC;
-  font-family: 'Latin Modern Mono 10', "LM Mono 10", 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', monospace, sans-serif;
+  font-family: Sarasa Mono SC, 'Latin Modern Mono 10', "LM Mono 10", 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', monospace, sans-serif;
   box-sizing: border-box;
   border-right: 0px;
   margin: 0 2px 0 2px;
