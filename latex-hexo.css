@@ -168,7 +168,7 @@ body p {
 
 /* 自用note注释块 */
 div.note {
-    font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+    font-family: '方正新书宋_GBK', 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
     font-size: 11pt;
     float: right;
     clear: both;
