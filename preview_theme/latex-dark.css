@@ -68,6 +68,13 @@
 }
 
 @font-face {
+  font-family: 'Iosevka';
+  font-style: normal;
+  font-weight: normal;
+  src: url("./latex/Iosevka-Regular.ttc");
+}
+
+@font-face {
   font-family: '仿宋';
   font-style: italic;
   font-weight: normal;
@@ -75,10 +82,10 @@
 }
 
 @font-face {
-    font-family: '楷体';
-    font-style: italic;
-    font-weight: normal;
-    src: url("./latex/simkai.ttf");
+  font-family: '楷体';
+  font-style: normal;
+  font-weight: normal;
+  src: url("./latex/simkai.ttf");
 }
 
 @font-face {
@@ -115,18 +122,19 @@
 body {
   font-synthesis: none;
   margin: auto !important;
+  /*页面位置调整*/
   text-align: justify;
   background-color: #1e1e1e;
   color: #d4d4d4;
   max-width: 21cm;
+  /*页宽*/
 }
 
 body p {
   line-height: 1.37rem;
   /*行距*/
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman',
-    /**/
-    Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', 'Iosevka', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  /*字号*/
   font-size: 11.6pt;
 }
 
@@ -150,12 +158,14 @@ body p {
 /* 内嵌于body的预览块主体 */
 .markdown-preview {
   margin: auto !important;
+  /*调整页面位置*/
   right: 0 !important;
   left: 0 !important;
   padding-left: 10% !important;
   padding-right: 10% !important;
   width: 100% !important;
   max-width: 21cm;
+  /*页宽*/
 }
 
 /* 侧边栏收起时处理页面宽度 */
@@ -169,7 +179,6 @@ body p {
   left: calc(50% + 150px) !important;
   transform: translateX(-50%);
 }
-
 
 /* 自用note注释块 */
 div.note {
@@ -185,24 +194,28 @@ div.note {
   margin-left: 24px;
 }
 
-
 /* 一级标题 */
 body h1 {
   margin-top: 42pt;
+  /*段前*/
   margin-bottom: 24pt;
+  /*段后*/
   max-width: 21cm;
   page-break-after: avoid !important;
   text-align: center;
+  /*居中*/
   font-size: 18pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体;
+  /*字号*/
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
   font-weight: bold;
+  /*加粗*/
 }
 
 /* 二级标题 */
 body h2 {
   page-break-after: avoid !important;
   font-size: 16pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
   font-weight: bold;
 }
 
@@ -211,7 +224,7 @@ body h2 {
 h3 {
   page-break-after: avoid !important;
   font-size: 14pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
   font-weight: bold;
 }
 
@@ -219,7 +232,7 @@ h3 {
 h4 {
   page-break-after: avoid !important;
   font-size: 13pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
   font-weight: bold;
 }
 
@@ -227,7 +240,7 @@ h4 {
 h5 {
   page-break-after: avoid !important;
   font-size: 13pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
 }
 
 /* 列表内容*/
@@ -235,6 +248,7 @@ li {
   position: outside;
   font-size: 11.6pt;
   /*列表字号*/
+  margin: 1em;
 }
 
 /* 斜体(专有名词) */
@@ -246,19 +260,14 @@ em {
   font-family: 'Latin Modern Roman 10',
     'LM Roman 10',
     'Times New Roman',
-    Arial,
     '仿宋',
-    '方正清刻本悦宋 简繁',
-    '方正新书宋_GBK',
-    'Source Han Serif SC',
-    'simsun',
     serif;
 }
 
 /* 粗体(强调) */
 body strong {
   font-weight: bold;
-  font-family: Sarasa Mono SC, 黑体, sans-serif;
+  font-family: '方正悠宋 GBK 508R', Sarasa Mono SC, sans-serif;
 }
 
 /* 行内代码 */
@@ -279,14 +288,18 @@ li code {
 blockquote {
   background-color: inherit;
   margin: 10px 30px 10px 0px;
+  /*外边距*/
   border-radius: 3px 3px 3px 3px;
+  /*圆角*/
   border: 1px solid #333;
+  /*边框*/
 }
 
 /* 引用文字 */
 blockquote p {
   padding: 1px 20px 1px 20px;
-  font-style: italic;
+  /*内边距*/
+  font-style: normal;
   font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '楷体', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
   font-size: 11.6pt;
   color: #d4d4d4;
@@ -319,12 +332,15 @@ hr {
 
 /* 折叠文字 */
 details {
-  font-size: 11pt;
+  font-size: 11.6pt;
   font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
   box-sizing: border-box;
   margin: 12px;
+  /*外边距*/
   padding-left: 24px;
+  /*左侧内边距*/
   padding-right: 18px;
+  /*右侧内边距*/
   /* border-radius: 2px 2px 2px 2px ;  */
   /* box-shadow: 0 0 2px 2px #d4d4d4; */
 }
@@ -334,10 +350,10 @@ center {
   font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, 'KaiTi', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
 }
 
-
 /* katex渲染的数学公式 */
 .katex {
   font-size: 1rem;
+  /*控制行间公式字号*/
   text-indent: 0;
   text-rendering: auto;
 }
@@ -345,21 +361,21 @@ center {
 /* mathjax渲染的数学公式 */
 .MathJax_Display {
   font-size: 0.8rem;
+  /*控制行间公式字号*/
 }
 
 /* 公式块的边距 */
 span.base {
   margin-top: 2px;
   margin-bottom: 2px;
+  max-width: 100%;
 }
-
 
 /* 侧栏 */
 .md-sidebar-toc {
   background-color: #1f1f1f;
 }
 
-/*左对齐*/
 .md-sidebar-toc li {
   font-size: 0.8rem !important;
   margin-bottom: 0 !important;
@@ -436,6 +452,8 @@ body {
   content: counter(outline-h2) "." counter(outline-h3) "." counter(outline-h4) "." counter(outline-h5) " ";
 }
 
+
+
 /* 三线表 */
 table {
   border-top: 1.2pt solid;
@@ -464,7 +482,7 @@ table td {
 }
 
 table thead {
-  border-bottom: 0.5pt solid;
+  border-bottom: 0.5pt solid whitesmoke;
 }
 
 table th {
@@ -481,6 +499,7 @@ img {
   -webkit-filter: invert(88.2%) hue-rotate(180deg);
   filter: invert(88.2%) hue-rotate(180deg);
   max-width: 100%;
+  /*防止宽度溢出*/
 }
 
 
@@ -492,8 +511,7 @@ figcaption {
   font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
 }
 
-
-
+/*有序和无序列表*/
 body ul,
 body ol {
   margin: 0;
