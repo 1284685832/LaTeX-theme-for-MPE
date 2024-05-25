@@ -1,6 +1,12 @@
 /* 引入字体，尽管在html中可能没用 */
 
 /* LM Roman */
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: normal;
+  src: url("./latex/Georgia.ttf");
+}
 
 @font-face {
   font-family: 'LM Roman 10';
@@ -300,7 +306,7 @@ blockquote p {
   padding: 1px 20px 1px 20px;
   /*内边距*/
   font-style: normal;
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '楷体', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: Georgia, 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '楷体', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
   font-size: 11.6pt;
   color: #d4d4d4;
 }
