@@ -54,14 +54,14 @@
 
 
 @font-face {
-  font-family: 'Source Han Serif';
+  font-family: 'Source Han Serif SC';
   font-style: normal;
   font-weight: normal;
   src: url("./latex/SourceHanSerifSC-Regular.otf");
 }
 
 @font-face {
-  font-family: 'Source Han Serif';
+  font-family: 'Source Han Serif SC';
   font-style: normal;
   font-weight: bold;
   src: url("./latex/SourceHanSerifSC-Bold.otf");
@@ -122,6 +122,13 @@
   src: url("./latex/FZQINGKBYSJF.TTF");
 }
 
+@font-face {
+  font-family: 'I.Mahjong-CAN';
+  font-style: normal;
+  font-weight: normal;
+  src: url("./latex/I.MahjongCAN.TTF");
+}
+
 /*初始化格式*/
 /* 注意嵌套关系为body>markdown_preview */
 
@@ -139,7 +146,7 @@ body {
 body p {
   line-height: 1.37rem;
   /*行距*/
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', 'Iosevka', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', 'Iosevka', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', 'I.Mahjong-CAN', serif;
   /*字号*/
   font-size: 11.6pt;
 }
@@ -188,7 +195,7 @@ body p {
 
 /* 自用note注释块 */
 div.note {
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', 'I.Mahjong-CAN', serif;
   font-size: 10.5pt;
   float: right;
   clear: both;
@@ -212,7 +219,7 @@ body h1 {
   /*居中*/
   font-size: 18pt;
   /*字号*/
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, 'I.Mahjong-CAN', sans-serif;
   font-weight: bold;
   /*加粗*/
 }
@@ -221,7 +228,7 @@ body h1 {
 body h2 {
   page-break-after: avoid !important;
   font-size: 16pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, 'I.Mahjong-CAN', sans-serif;
   font-weight: bold;
 }
 
@@ -230,7 +237,7 @@ body h2 {
 h3 {
   page-break-after: avoid !important;
   font-size: 14pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, 'I.Mahjong-CAN', sans-serif;
   font-weight: bold;
 }
 
@@ -238,7 +245,7 @@ h3 {
 h4 {
   page-break-after: avoid !important;
   font-size: 13pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, 'I.Mahjong-CAN', sans-serif;
   font-weight: bold;
 }
 
@@ -246,7 +253,7 @@ h4 {
 h5 {
   page-break-after: avoid !important;
   font-size: 13pt;
-  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, sans-serif;
+  font-family: 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', Sarasa Mono SC, 黑体, 'I.Mahjong-CAN', sans-serif;
 }
 
 /* 列表内容*/
@@ -267,13 +274,13 @@ em {
     'LM Roman 10',
     'Times New Roman',
     '仿宋',
-    serif;
+    'I.Mahjong-CAN', serif;
 }
 
 /* 粗体(强调) */
 body strong {
   font-weight: bold;
-  font-family: '方正悠宋 GBK 508R', Sarasa Mono SC, sans-serif;
+  font-family: '方正悠宋 GBK 508R', Sarasa Mono SC, 'I.Mahjong-CAN', sans-serif;
 }
 
 /* 行内代码 */
@@ -282,7 +289,7 @@ p code,
 li code {
   color: #d4d4d4;
   background-color: #333;
-  font-family: Sarasa Mono SC, 'Latin Modern Mono 10', "LM Mono 10", 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', monospace, sans-serif;
+  font-family: Sarasa Mono SC, 'Latin Modern Mono 10', "LM Mono 10", 'Latin Modern Mono 10', 'LM Mono 10', 'Times New Roman', Arial, 'FZYouSongS 509R', '方正悠宋 GBK 508R', monospace, 'I.Mahjong-CAN', sans-serif;
   box-sizing: border-box;
   border-right: 0px;
   margin: 0 2px 0 2px;
@@ -306,7 +313,7 @@ blockquote p {
   padding: 1px 20px 1px 20px;
   /*内边距*/
   font-style: normal;
-  font-family: Georgia, 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '楷体', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: Georgia, 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', '楷体', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', 'I.Mahjong-CAN', italic;
   font-size: 11.6pt;
   color: #d4d4d4;
 }
@@ -339,7 +346,7 @@ hr {
 /* 折叠文字 */
 details {
   font-size: 11.6pt;
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', 'I.Mahjong-CAN', serif;
   box-sizing: border-box;
   margin: 12px;
   /*外边距*/
@@ -353,7 +360,7 @@ details {
 
 /* 居中文字 */
 center {
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, 'KaiTi', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, 'KaiTi', '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', 'I.Mahjong-CAN', serif;
 }
 
 /* katex渲染的数学公式 */
@@ -464,7 +471,7 @@ body {
 table {
   border-top: 1.2pt solid;
   border-bottom: 1.2pt solid;
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', "Times New Roman", Arial, "Source Han Serif SC", 'simsun', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', "Times New Roman", Arial, "Source Han Serif SC", 'simsun', 'I.Mahjong-CAN', serif;
   text-align: center;
   page-break-inside: avoid;
   width: 100%;
@@ -483,7 +490,7 @@ table .katex {
 }
 
 table td {
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', "Times New Roman", Arial, "Source Han Serif SC", 'simsun', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', "Times New Roman", Arial, "Source Han Serif SC", 'simsun', 'I.Mahjong-CAN', serif;
   font-size: 9pt;
 }
 
@@ -492,7 +499,7 @@ table thead {
 }
 
 table th {
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', "Times New Roman", Arial, "Source Han Serif SC", 'simsun', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', "Times New Roman", Arial, "Source Han Serif SC", 'simsun', 'I.Mahjong-CAN', serif;
   font-size: 9pt;
 }
 
@@ -514,14 +521,14 @@ img {
 figcaption {
   display: block;
   font-size: 12px;
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', 'I.Mahjong-CAN', serif;
 }
 
 /*有序和无序列表*/
 body ul,
 body ol {
   margin: 0;
-  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', serif;
+  font-family: 'Latin Modern Roman 10', 'LM Roman 10', 'Times New Roman', Arial, '方正新书宋_GBK', 'Source Han Serif SC', 'simsun', '仿宋', '方正清刻本悦宋 简繁', 'I.Mahjong-CAN', serif;
   font-size: initial;
   text-decoration: none
 }
